@@ -22,4 +22,7 @@ A super user is already created :
    dob = none
         
 
-Two files are uploaded by superuser. Only superuser has the permissions to delete files.
+Two files have been already uploaded by superuser. 
+Only superuser has the permissions to delete files.
+
+A normal user has permissions to either upload a file or download files.
