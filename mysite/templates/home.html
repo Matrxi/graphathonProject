@@ -1,0 +1,24 @@
+{% extends 'contact.html' %}
+
+{% block content %}
+<div class="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+          <div class="contact_title">
+              <h1>Welcome, {{ user.get_full_name }} {{ user.username }}!</h1>
+                <h4>Your birth date: {{ user.profile.birth_date }}</h4>
+          </div>
+      </div>
+    </div>
+  </div>
+</div >
+{% endblock %}
+
+
+
+
+<!--
+
+
+-->
