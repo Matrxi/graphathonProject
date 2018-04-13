@@ -17,7 +17,7 @@ Step 4: Perform migrations
 Step 5: Start the server
         $ python3 manage.py runserver
         
- Now go to 127.0.0.0:8000 if you didn't specify port number explicitly
+ Now go to 127.0.0.1:8000 if you didn't specify port number explicitly
  
 You will be logged in as super user if you follow the above commands
 A super user is already created : 
