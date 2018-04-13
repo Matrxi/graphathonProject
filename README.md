@@ -21,3 +21,5 @@ A super user is already created :
    password = root
    dob = none
         
+
+Two files are uploaded by superuser. Only superuser has the permissions to delete files.
