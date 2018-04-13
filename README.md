@@ -16,9 +16,11 @@ Step 5: Start the server
         $ python3 manage.py runserver
         
 
+You will be logged in as super user if you follow the above commands
 A super user is already created : 
    username = root
    password = root
+   
    dob = none
         
 
