@@ -1,7 +1,7 @@
 # graphathonProject
 Project for graphathon
 
-Step 1: clone the repository : https://github.com/Matrxi/graphathonProject.git
+Step 1: clone the repository : git clone https://github.com/Matrxi/graphathonProject.git
 
 Step 2: install pip3
         $ sudo apt-get install pip3
