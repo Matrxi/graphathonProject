@@ -1,0 +1,63 @@
+{% extends  'contact.html'%}
+
+
+
+{%block content%}
+<div class="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+
+          <div class="contact_title">
+<h1>Uploaded files list:</h1>
+{% if documents %}
+<ul>
+    {% for obj in documents %}
+    <li><p style="font-size : 20px"><a href="{{ obj.document.url }}">{{ obj.document.name }}</a></p>
+      <p> {{obj.document.primary_key}} </p>
+    </li>
+    {% endfor %}
+    {% if user.is_staff %}
+        <form action="{% url 'delete_all_files' %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input style="font-size : 20px" type="hidden" id="{{obj.document.name}}" />
+        <input  type="submit" value="Delete All Files" />
+        </form>
+    {% endif %}
+    {% if user.is_staff %}
+        <form action="{% url 'delete_first_file' %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <small><input type="hidden" id="{{obj.document.name}}"/></small>
+        <small><input type="submit" value="Delete File From Top"/></small>
+        </form>
+    {% endif %}
+</ul>
+{% else %}
+</br>
+<h4> No documents left now.</h4>
+{% endif %}
+<p style="color: blue"><a href="{% url 'homewelcome' %}">Return to home</a></p>
+</ul>
+
+
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+{% endblock %}
+
+
+<!--
+<ul>
+  {% for obj in documents %}
+    <li>
+      <a href="{{obj.document.url}}">{{ obj.document.name }}</a>
+      <small>(Uploaded at: {{ obj.uploaded_at }})</small>
+    </li>
+  {% endfor %}
+</ul>
+
+-->
