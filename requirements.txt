@@ -4,3 +4,4 @@ packaging==16.8
 pyparsing==2.1.10
 six==1.10.0
 django-filer
+whitenoise-3.3.1-py2.py3-none-any.whl
