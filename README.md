@@ -9,7 +9,7 @@ Step 2: install pip3
 Step 3: Run the following command to satisfy the requirements
         $ pip install -r requirements.txt
         
-Step 4: Perfrom migrations
+Step 4: Perform migrations
         $ python3 manage.py migrate
       
 Step 5: Start the server
