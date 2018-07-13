@@ -123,3 +123,6 @@ LOGOUT_URL = 'logout'
 LOGIN_REDIRECT_URL = 'home'
 
 FILER_CANONICAL_URL = 'sharing/'
+
+import django_heroku
+django_heroku.settings(locals())
